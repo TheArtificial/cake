@@ -1,0 +1,72 @@
+body {
+	background: #000000;
+	color: #1C1C1C;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a:hover {
+	color: #c41c33;
+}
+
+h5{
+	color: #1C1C1C;
+}
+
+h6, h6 a {
+	color: #1C1C1C;
+}
+
+h6 a:hover {
+	text-decoration: none;
+}
+
+/* navigation */
+#titleArea, .btnBox {
+}
+
+#title, .btnText {
+	color: #FFFFFF;
+}
+
+.nav li a {
+	opacity: .3;
+}
+
+.nav li a:hover {
+	background: inherit;
+	opacity:.6;
+}
+
+.nav li.active a {
+	opacity: 1;
+}
+
+/* content and containers */
+.circle {
+    background: #FFFFFF;	
+}
+
+.textHalf {
+	background: #FFFFFF;
+}
+
+.textQuarter {
+	background: #FFFFFF;
+}
+
+/* add ons */
+
+.black {
+	color: black;
+}
+
+.white {
+	color: white;
+}
+
+.footer {
+	height: 320px;
+}
