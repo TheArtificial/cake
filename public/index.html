@@ -38,17 +38,6 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	
-	<style>
-		.scrollpos{
-		    position: fixed;
-		    z-index: 100;
-		    background: #ffffff;
-		    top: 0;
-		    right: 0;
-		}
-	</style>
-	<div class="scrollpos"></div>
-
 	<div id="navBar" style="z-index:1;">
 		<div id="nav">
 			<div id="titleArea">
@@ -246,7 +235,6 @@ Despite this noble history, scant attention has been paid to the critical issue 
 		
 	</div><!-- Footer -->
 	
-	
 	</div><!-- .content -->
 
 
@@ -257,10 +245,7 @@ Despite this noble history, scant attention has been paid to the critical issue 
 		// https://github.com/Prinzhorn/skrollr#forceheighttrue
 		var s = skrollr.init({
 			forceHeight: false, 
-			smoothScrolling: false,
-			render: function(data) {
-				document.querySelector('.scrollpos').innerHTML = data.curTop;
-			}
+			smoothScrolling: false
 		});
     </script>
 	
