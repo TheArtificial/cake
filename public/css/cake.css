@@ -1,5 +1,4 @@
 body {
-	background: #000000;
 	color: #1C1C1C;
 }
 
@@ -21,6 +20,12 @@ h6, h6 a {
 
 h6 a:hover {
 	text-decoration: none;
+}
+
+hr {
+	height:2px;
+	background-color: white;
+	margin-top: 35px;
 }
 
 /* navigation */
@@ -45,8 +50,13 @@ h6 a:hover {
 }
 
 /* content and containers */
-.circle {
-    background: #FFFFFF;	
+.details{
+	height:750px;
+}
+
+.sidestory{
+	background: #1A1A1A;
+	height:350px;
 }
 
 .textHalf {
@@ -57,10 +67,16 @@ h6 a:hover {
 	background: #FFFFFF;
 }
 
+
 /* add ons */
 
 .black {
 	color: black;
+}
+
+.grey {
+	color: #333333;
+	margin-bottom: 0px;
 }
 
 .white {
@@ -68,5 +84,7 @@ h6 a:hover {
 }
 
 .footer {
-	height: 320px;
+	height: 380px;
+	background-color: #1A1A1A;
+
 }
