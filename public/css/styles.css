@@ -20,7 +20,6 @@ h1 {
   font-family: "Source Sans Pro", Helvetica, Sans-Serif;
   font-size: 2em;
   font-weight: 700;
-  color: #ffffff;
 }
 /*Title*/
 h2 {
@@ -38,6 +37,10 @@ h3 {
   line-height: 1.8em;
   color: #ffffff;
 }
+/*Figure labels*/
+h4 {
+  line-height: 0;
+}
 
 ul {
 }
@@ -52,7 +55,6 @@ p {
 	font-size: .9em;
 	line-height: 1.8em;
 	letter-spacing: .1em;
-	color: #ffffff;
 	clear: both;
 }
 
