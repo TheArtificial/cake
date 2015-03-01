@@ -380,11 +380,12 @@
 	
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script type="text/javascript">
-		// https://github.com/Prinzhorn/skrollr#forceheighttrue
-		var s = skrollr.init({
-			forceHeight: false, 
-			smoothScrolling: false
-		});
+        if(window.innerWidth > 700) {
+          var s = skrollr.init({
+            forceHeight: false, 
+              smoothScrolling: false
+          });
+        };
     </script>
 	
 	<script>
