@@ -101,13 +101,7 @@ p {
 }
 
 /* content and containers */
-.circle {
-    border-radius: 50%;
-    height: 240px;
-	margin: 0 auto;
-	padding-top: 120px;
-    width: 360px;
-}
+
 
 .content {
 	margin-top: 84px;

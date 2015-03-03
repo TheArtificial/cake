@@ -1,0 +1,79 @@
+/* line 1, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+h1, h2, h3, h4, h5, p, li, ul {
+  font-family: "helvetica neue", helvetica, arial, sans-serif; }
+
+@media only screen and (min-device-width: 320px) {
+  /* line 7, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em; }
+
+  /* line 12, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h2 {
+    font-size: 1.625em;
+    line-height: 1.154em; }
+
+  /* line 17, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h3 {
+    font-size: 1.375em;
+    line-height: 1.136em; }
+
+  /* line 22, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.11em; }
+
+  /* line 27, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  p, li, ul {
+    font-size: 1em;
+    line-height: 1.25em; } }
+@media only screen and (min-device-width: 768px) {
+  /* line 35, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125em; }
+
+  /* line 40, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h2 {
+    font-size: 2em;
+    line-height: 1.25em; }
+
+  /* line 45, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em; }
+
+  /* line 50, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.222em; }
+
+  /* line 55, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  p, li, ul {
+    font-size: 1em;
+    line-height: 1.375em; } }
+@media only screen and (min-width: 960px) {
+  /* line 63, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h1 {
+    font-size: 3em;
+    line-height: 1.05em; }
+
+  /* line 68, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25em; }
+
+  /* line 73, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h3 {
+    font-size: 1.75em;
+    line-height: 1.25em; }
+
+  /* line 78, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.22em; }
+
+  /* line 83, /Users/shannonethomas/Work/artificial template/source/stylesheets/artificial-typography.scss */
+  p, li, ul {
+    font-size: 1em;
+    line-height: 1.25em; } }
