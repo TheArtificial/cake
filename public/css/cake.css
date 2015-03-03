@@ -49,13 +49,6 @@ hr {
 }
 
 /* navigation */
-#titleArea, .btnBox {
-}
-
-#title, .btnText {
-	color: #FFFFFF;
-}
-
 .nav li a {
 	opacity: .3;
 }
