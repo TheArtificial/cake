@@ -1,0 +1,122 @@
+// for header and footer elements
+
+.padded-lr {
+	padding: 10px 16px 10px 16px;
+}
+
+// top header
+// mobile
+@media only screen {
+	#header {
+		background-color: $white;
+
+		.topbar {
+			border-top-color: $turquoise;
+		}
+		
+		.flexcontainer {
+			border-bottom-color: $warm-grey-20;
+		}
+		
+		#nav-primary {
+			ul {	
+				li {
+					a {
+						color: $warm-grey-90;
+					}
+		
+					a:hover {
+						color: $turquoise;
+					}
+				}
+				li.active a {
+					color: $turquoise;
+				}
+			}
+		}
+	}
+	
+	#underheader {
+		background-color: $white;
+		background: URL("../images/balloon.png") center no-repeat;
+	}
+	
+	#nav-secondary {
+		border-bottom-color: $warm-grey-20;
+	
+		ul {		
+			li {
+				a {
+					color: $warm-grey-30;
+				}		
+				a:hover {
+					color: $warm-grey-40;
+				}
+			}
+		}	
+	}
+}
+
+// side header
+// mobile, tablet, and desktop
+@media only screen {
+	#header-side {
+		.topbar {
+			border-top-color: $warm-grey-90;
+		}
+	}	
+}
+
+// content
+#content {
+	background-color: $white;
+}
+
+// footer
+
+// mobile, tablet, and desktop
+@media only screen {
+
+	#footer {
+		background-color: $white;
+		
+		.flexcontainer
+		{
+			border-top-color: $white;
+		}
+		h3, h4, p {
+			color: $warm-grey-90;
+		}
+			a {
+			color: $turquoise;
+		}
+		a:hover {
+			color: $dark-turquoise;
+		}
+	}
+}
+
+// cake-specific
+
+.col-2, .col-3, .col-4 {
+	float: left;
+}
+
+.headline {
+	color: $white;
+	position: absolute;
+	bottom: 0;
+}
+
+.thumb {
+	padding: 4px;
+	border: 1px solid $warm-grey-90;
+}
+
+.sidestory {
+	background-color: $warm-grey-90;
+	color: $warm-grey-10;
+	.date {
+		color: $warm-grey-40;
+	}
+}
