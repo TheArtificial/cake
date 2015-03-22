@@ -7,6 +7,7 @@
   // Options:
   //   background: selector (default: '.parallax-background')
   //   foreground: selector (default: '.parallax-foreground')
+  //   friction: slowdown factor (defailt: 10)
   //
   // If foreground element is not found, first non-background child will be used
   // The main element's height will be set to match the foreground
@@ -14,12 +15,12 @@
   $.fn.artificialParallax = function( options ) {
     var settings = $.extend({
       background: ".parallax-background",
-      foreground: ".parallax-foreground"
+      foreground: ".parallax-foreground",
+      friction: 10
     }, options );
 
     // Get the viewport dimensions
-    var slack = 300,  // px added to background
-        viewportHeight = $(window).height(),
+    var viewportHeight = $(window).height(),
         parallaxItems = [],
         isScrolling = false,
         scrollingTimer = 0;
@@ -52,9 +53,10 @@
 
         $this.css('position', 'relative');
         $this.css('overflow', 'hidden');
-        $foreground.css('position', 'absolute').css('top',0);
+        $foreground.css('position', 'relative').css('top',0);
         $background.css('position', 'absolute');
         $background.width('100%');
+        var slack = Math.floor((viewportHeight-height)/viewportHeight * settings.friction * 10);
         $background.height(height + slack);
         var parallaxItem = {
             $element: $this,
@@ -87,13 +89,15 @@
 
       var
         height = parallaxItem.height,
-        offset = (boundingTop+height)/(viewportHeight+height),
-        newTop = -offset * height;
-//          parallaxItem.$background.css({
-//              'transform': 'translate3d(0,' + newTop + 'px,0)'
-//          });
-      // hmmm http://blog.tumult.com/2013/02/28/transform-translate-vs-top-left/
-        parallaxItem.$background.css('top',newTop);
+        slack = parallaxItem.slack,
+        pos = (boundingTop) / (viewportHeight-height), // 0 aligned to top, 1 aligned to bottom
+        offset = (pos * slack) << 0; // faster Math.floor
+
+      parallaxItem.$background.css({
+          'transform': 'translate3d(0,' + -offset + 'px,0)'
+      });
+    // hmmm http://blog.tumult.com/2013/02/28/transform-translate-vs-top-left/
+    // parallaxItem.$background.css('top',newTop);
     }
 
     function animateParallaxItems() {
