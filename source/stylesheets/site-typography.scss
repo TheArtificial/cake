@@ -1,6 +1,6 @@
 // basic typography
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300italic|Source+Code+Pro:300);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,300|Source+Code+Pro:300);
 
 img + h1, img + h2, img + h3, img + h4, img + h5, img + p {
 	margin: 0;
@@ -13,10 +13,13 @@ h1, h2, h3, h5, p {
 	padding-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, p, ul, li {
-	font-family:  "Source Code Pro", Helvetica, Sans-Serif;
+h1, h3, h5, p, ul, li {
+	font-family: "source sans pro",sans-serif;
 }
 
+h1, h2, h4{
+	font-family: "source code pro",sans-serif;
+}
 h4 {
 	text-transform: uppercase;
 	margin: 0;
@@ -39,6 +42,7 @@ h1, h2, h3, h4, h5, p {
 	margin-top: 0;
 }
 
+
 // for mobile
 @media only screen and (min-device-width: 320px) {
 	h1 {
@@ -47,8 +51,9 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	h2 {
-		font-size: 1.625em;
+		font-size: 3.5em;
 		line-height: 1.154em;
+    
 	}
 
 	h3 {
@@ -63,7 +68,7 @@ h1, h2, h3, h4, h5, p {
 
 	p, li, ul, a {
 		font-size: 1em;
-		line-height: 1.25em;
+		line-height: 1.35em;
 	}
 }
 
@@ -91,19 +96,19 @@ h1, h2, h3, h4, h5, p {
 
 	p, li, ul, a {
 		font-size: .9em;
-		line-height: 1.175em;
+		line-height: 1.35em;
 	}
 }
 
 // for desktop
 @media only screen and (min-width: 960px) {
 	h1 {
-		font-size: 3em;
+		font-size: 5em;
 		line-height: 1.05em;
 	}
 
 	h2 {
-		font-size: 2.25em;
+		font-size: 3.5em;
 		line-height: 1.25em;
 	}
 
@@ -118,7 +123,7 @@ h1, h2, h3, h4, h5, p {
 	}
 
 	p, li, ul, a {
-		font-size: 1em;
-		line-height: 1.25em;
+		font-size: 1.01em;
+		line-height: 1.6em;
 	}
 }
