@@ -83,9 +83,14 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
+    puma (2.11.1)
+      rack (>= 1.1, < 2.0)
     rack (1.6.0)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -118,3 +123,6 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   middleman (~> 3.3.10)
+  puma
+  rack-contrib
+  rake
