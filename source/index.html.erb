@@ -2,6 +2,7 @@
 layout: side_layout
 ---
 
+<script src="javascripts/moment.js"></script>
 <script>
 
 $(document).ready(function() {
@@ -10,7 +11,7 @@ $(document).ready(function() {
 
   // replace "Today" with today's month/day
   var now = new Date();
-  var today = now.toLocaleString('en-us', { month: 'long', day: 'numeric' })
+  var today = moment().format('MMMM D');
   $('.today').each(function(index,el){
     el.innerText = today;
   });
@@ -18,7 +19,6 @@ $(document).ready(function() {
 });
 
 </script>
-
 
 
 <!-- page content -->
