@@ -54,6 +54,12 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 # Build-specific configuration
+configure :development do
+  require "better_errors"
+  use BetterErrors::Middleware
+  BetterErrors.application_root = __dir__
+end
+
 configure :build do
   # For example, change the Compass output style for deployment
   # activate :minify_css

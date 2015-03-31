@@ -11,7 +11,7 @@
  *= require_self
  */
 
-@import "framework.scss";
-@import "site-typography.scss";
-@import "site-base.scss";
-//@import "site-form.scss";
+@import "framework";
+@import "_site-typography";
+@import "_site-base";
+//@import "_site-form";
