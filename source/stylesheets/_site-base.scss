@@ -22,23 +22,7 @@
 		.flexcontainer {
 			border-bottom-color: $warm-grey-20;
 		}
-		
-		#nav-primary {
-			ul {	
-				li {
-					a {
-						color: $warm-grey-90;
-					}
-		
-					a:hover {
-						color: $turquoise;
-					}
-				}
-				li.active a {
-					color: $turquoise;
-				}
-			}
-		}
+
 	}
 	
 	#underheader {
@@ -68,6 +52,21 @@
 	#header-side {
 		.topbar {
 			border-top-color: $warm-grey-90;
+		}
+
+    #nav-primary {
+      li {
+        a svg * {
+          fill: $warm-grey-90;
+        }
+
+        a:hover svg * {
+          fill: $turquoise;
+        }
+        &.active a svg * {
+          fill: $turquoise;
+        }
+      }
 		}
 	}	
 }
