@@ -1,5 +1,5 @@
 // Artificial base css
-// March 2015
+// May 2015
 // This document should not be edited
 
 
@@ -29,6 +29,8 @@
 		}
 			
 		#logo {
+			text-align: center;
+			
 			img {
 				display: block;
 				margin: 0 auto;
@@ -56,7 +58,7 @@
 	
 	#underheader {
 		width: 100%;
-		height: 110px;
+		height: 106px;
 		display: block;
 	}
 	
@@ -90,6 +92,8 @@
 		height: inherit;
 
 		#logo {
+			text-align: left;
+			
 			img {
 				margin-left: 0;
 			}
@@ -109,7 +113,7 @@
 	}
 
 	#underheader {
-		height: 70px;
+		height: 68px;
 	}	
 	
 	#nav-secondary {
@@ -156,23 +160,9 @@
 	    justify-content: flex-start;
 			height: 0;
 			
-			.iconlist {
-				width: 60px;
-				
+			.iconlist {				
 				ul {
 					padding-left: 0;
-				}
-				
-				li {
-					margin: 40px 0 0 0;
-					
-					a {
-						opacity: 0.4;
-					}
-					
-					a:hover {
-						opacity: 1.0;
-					}
 				}
 			}			
 		}
@@ -187,7 +177,6 @@
 		width: 100%;
 		height: 240px;
 		display: block;
-		padding-top: 20px;
 		
 		.flexcontainer
 		{
@@ -205,19 +194,18 @@
 		
 		#artificial {
 			text-align: center;
-		
-			#artlogo {	
-				img {
-					width: 300px;
+			a {
+				font-size: .9em;
+				
+				svg#Layer_1 {
+					width: 100%;
 				}
-			}	
-			p {
-				display: none;
 			}
 		}	
 		
 		#about, #promo {
-			display: none;
+			border-top-width: 1px;
+			border-top-style: solid;
 		}	
 	}
 }
@@ -227,7 +215,6 @@
 
 	#footer {
 		height: 320px;
-		padding-top: 40px;
 		
 		#artificial {
 			#artlogo {
@@ -243,7 +230,7 @@
 		
 		#about, #promo {
 			padding-top: 60px;
-			display: block;
+			border: none;
 		}	
 	}
 }
@@ -394,5 +381,4 @@
 		}
 	}
 }	
-
 

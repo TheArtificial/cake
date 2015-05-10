@@ -4,11 +4,6 @@
 	padding: 10px 16px 10px 16px;
 }
 
-.ddd {
-	padding:100px;
-}
-
-
 // top header
 // mobile
 @media only screen {
@@ -34,7 +29,7 @@
 		border-bottom-color: $warm-grey-20;
 	
 		ul {		
-			li {
+			li {				
 				a {
 					color: $warm-grey-30;
 				}		
@@ -53,19 +48,38 @@
 		.topbar {
 			border-top-color: $warm-grey-90;
 		}
-
+		
     #nav-primary {
-      li {
-        a svg * {
-          fill: $warm-grey-90;
-        }
+     
+			ul {
 
-        a:hover svg * {
-          fill: $turquoise;
-        }
-        &.active a svg * {
-          fill: $turquoise;
-        }
+				li {
+					background-color: rgba($white, .5);
+					margin: 24px 8px 8px 8px;
+					padding: 8px;	
+					border-radius: 20%;
+			
+					a {
+						display: block;
+						width: 100%;
+						line-height: .8em;
+					}
+	
+	        a svg * {
+	          fill: $warm-grey-90;
+						opacity: .4;
+	        }
+
+	        a:hover svg * {
+	          fill: $turquoise;
+						opacity: 1.0;
+	        }
+  
+		      &.active a svg * {
+	          fill: $warm-grey-90;
+						opacity: 1.0;
+					}
+				}				
       }
 		}
 	}	
@@ -82,20 +96,21 @@
 @media only screen {
 
 	#footer {
-		background-color: $white;
+		background-color: $warm-grey-40;
 		
 		.flexcontainer
 		{
-			border-top-color: $white;
+			border-top-color: $warm-grey-40;
 		}
+		
 		h3, h4, p {
-			color: $warm-grey-90;
+			color: $white;
 		}
 			a {
-			color: $turquoise;
+			color: $white;
 		}
 		a:hover {
-			color: $dark-turquoise;
+			color: $warm-grey-10;
 		}
 	}
 
@@ -122,6 +137,8 @@
 .sidestory {
 	background-color: $warm-grey-90;
 	color: $warm-grey-10;
+	padding: 20px 0 40px 0;
+	
 	.date {
 		color: $warm-grey-40;
 	}
