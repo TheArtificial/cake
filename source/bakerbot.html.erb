@@ -1,0 +1,59 @@
+---
+layout: single_layout
+---
+
+<script src="javascripts/moment.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  $('.parallax').artificialParallax();
+
+  // replace "Today" with today's month/day
+  var now = new Date();
+  var today = moment().format('MMMM D');
+  $('.today').each(function(index,el){
+    el.innerText = today;
+  });
+
+});
+
+</script>
+
+
+<section id="content">
+
+  <!-- introduction -->
+	<div class="bleed parallax">
+		<img src="images/bakerbot-main.jpg" class="parallax-background">
+		<div style="height:480px;">
+    </div>
+  </div>
+
+  <div class="flexcontainer extra-padding">
+    <div class="col-2 meta">
+        <h1>2020</h1>
+        <h4>&#35;quantifiedself</h3>
+        <h4>&#35;3Dprinting</h3>
+        <h4>&#35;lasers</h3>
+    </div>
+    <div class="col-9 left-1">
+      <h1>New years resolutions made reality by kitchen robot dubbed BakerBot™</h1>
+			<p>Experts have been saying for years that the best way to improve yourself is through positive reinforcement, and the scientists at BakerBot™ have created a device to do just that. Motivate yourself to be better with Cake by BakerBot™.</p>
+      <p>Setting up your BakerBot™ oven is easy. After a quick 9-step process to connect to your home network*, simply connect your social, fitness tracking, bank account, work productivity measurement, and medical record accounts. Then you’re ready to choose from the self-improvement goals our BakerCoach™ algorithms suggest, insert dough cartridges**, and begin the journey to a better you!</p>
+      <p>BakerCoach™ will use your social media profiles to ensure you get precisely the kind of cake that’s right for you, including the flavor brands being discussed by your friends. You’ll never feel left out at the watercooler because you haven’t tried the latest.</p>
+      <img src="images/bakerbot-one.jpg">
+      <p>The included smart BakerKnife™ will use laser projection and haptic guidance to ensure you slice off only as much cake as you deserve. We all have bad days, so when you don’t deserve reward, the BakerBot™ will give you the extra push you need by still letting you see and smell a delicious cake through the window before recycling it.</p>
+      <div class="related">
+        <h2>Related news</h2>
+        <p>North American sales of BakerBot™ ovens have been temporarily suspended pending recertification in the Federal Nothing-to-Hide program. Mainstream media reports that the sprinkles placement algorithms are easily subverted must be investigated to ensure the integrity of CitizenID encoding and address concerns that cakes have been used as a medium for illegally encrypted messages.</p>
+      </div>
+      <div class="back-link">
+        <a href="index.html">&lt; back to all futures</a>
+      </div>
+    </div>
+	</div>
+
+
+
+</section>

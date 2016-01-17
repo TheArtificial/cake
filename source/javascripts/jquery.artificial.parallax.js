@@ -16,7 +16,7 @@
     var settings = $.extend({
       background: ".parallax-background",
       foreground: ".parallax-foreground",
-      friction: 10
+      friction: 40
     }, options );
 
     // Get the viewport dimensions

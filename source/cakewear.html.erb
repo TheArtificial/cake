@@ -1,0 +1,58 @@
+---
+layout: single_layout
+---
+
+<script src="javascripts/moment.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  $('.parallax').artificialParallax();
+
+  // replace "Today" with today's month/day
+  var now = new Date();
+  var today = moment().format('MMMM D');
+  $('.today').each(function(index,el){
+    el.innerText = today;
+  });
+
+});
+
+</script>
+
+
+<section id="content">
+
+  <!-- introduction -->
+	<div class="bleed parallax">
+		<img src="images/cakewear-main.jpg" class="parallax-background">
+		<div style="height:480px;">
+    </div>
+  </div>
+
+  <div class="flexcontainer extra-padding">
+    <div class="col-2 meta">
+        <h1>2050</h1>
+        <h4>&#35;wearables</h3>
+        <h4>&#35;nanotech</h3>
+    </div>
+    <div class="col-9 left-1">
+      <h1>Let them wear cake: Silicon Valley shows us new fashions for the 1% at this year’s CES</h1>
+			<p>Inventor Elon Shingy continues to strengthen his legacy of world-changing products, this time in cakewear bands.</p>
+      <p>The greatest minds of our time have been working to address crumbling, staleness, and mold. But their small, iterative improvements to baking techniques have been disrupted with E.S.’s technique to repair damage.</p>
+      <img src="images/cakewear-one.jpg">
+      <p>His new Shingy Shield is an inexpensive powder of disposable nanorobots that quickly learn together how to provide full coverage of band they have been placed on. Without interfering with the usual nutrient dosing through the cake-skin interface, these nanites detect damage to cake and even sense skin biometrics to predict problems and summon a swarm to strengthen the cakewear band.</p>
+      <p>E.S. reports that collaborations with major health insurers are underway to use the archived biodata in spent nanites to better serve customers.</p>
+      <div class="related">
+        <h2>Related news</h2>
+        <p>Shingy Shield might also be used for authentication. Every wearer’s nanites learn to arrange in unique patterns that can be scanned, and some security checkpoints are testing methods to detect this signature and speed passage between freedom zones.</p>
+      </div>
+      <div class="back-link">
+        <a href="index.html">&lt; back to all futures</a>
+      </div>
+    </div>
+	</div>
+
+
+
+</section>

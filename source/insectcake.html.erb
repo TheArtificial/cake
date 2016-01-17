@@ -1,0 +1,58 @@
+---
+layout: single_layout
+---
+
+<script src="javascripts/moment.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  $('.parallax').artificialParallax();
+
+  // replace "Today" with today's month/day
+  var now = new Date();
+  var today = moment().format('MMMM D');
+  $('.today').each(function(index,el){
+    el.innerText = today;
+  });
+
+});
+
+</script>
+
+
+<section id="content">
+
+  <!-- introduction -->
+	<div class="bleed parallax">
+		<img src="images/insectcake-main.jpg" class="parallax-background">
+		<div style="height:480px;">
+    </div>
+  </div>
+
+  <div class="flexcontainer extra-padding">
+    <div class="col-2 meta">
+        <h1>2050</h1>
+        <h4>&#35;eatinginsects</h3>
+        <h4>&#35;virtualreality</h3>
+    </div>
+    <div class="col-9 left-1">
+      <h1>Reimagining insect protien: using virtual reality to take us back to the days of plenty</h1>
+			<p>First we lost the bananas to disease, then the apples to insects. Slowly everything that tasted like anything was destroyed by the monoculture, and only the most wealthy had access to the remaining seed bank stores of Greater Monsanto. But those few heirloom seeds couldn't last forever.</p>
+      <p>Now a handful of students from the Paris Institute of Technology are hoping for change. They may be of the generation that grew up with space food (probably the kindest euphamism for insect protein), but they have the taste for something finer.</p>
+      <p>The surprise – they aren't changing the recipe, but instead focusing on the experience. Using virtual reality (they've tested with both the Apple iMask and the Xiaomi Si) in conjunction with their smell-transmitting prototype, students have been able to simulate over fourteen kinds of cakes.</p>
+      <p>Are you still skeptical? Apple and Xiaomi are already in talks with the team about augmenting their VR experiences, and it's only a matter of time until we're all eating gâteau.</p>
+      <div class="related">
+        <h2>Related news</h2>
+        <p>Anthropologists have been inspired by these new experiences, and are working with students to identify and refine the “flavors” of cake. So far, they've produced “chocolate” and “cinnamon”, and are working towards a "cheesecake" simulation of a recipe discovered in an old Betty Crocker cookbook.</p>
+      </div>
+
+      <div class="back-link">
+        <a href="index.html">&lt; back to all futures</a>
+      </div>
+    </div>
+	</div>
+
+
+
+</section>

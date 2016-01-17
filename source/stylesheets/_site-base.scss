@@ -1,43 +1,10 @@
-// for header and footer elements
-
-.padded-lr {
-	padding: 10px 16px 10px 16px;
-}
-
 // top header
 // mobile
 @media only screen {
 	#header {
-		background-color: $white;
-
 		.topbar {
-			border-top-color: $turquoise;
+			border-top-color: $warm-grey-80;
 		}
-		
-		.flexcontainer {
-			border-bottom-color: $warm-grey-20;
-		}
-
-	}
-	
-	#underheader {
-		background-color: $white;
-		background: URL("../images/balloon.png") center no-repeat;
-	}
-	
-	#nav-secondary {
-		border-bottom-color: $warm-grey-20;
-	
-		ul {		
-			li {				
-				a {
-					color: $warm-grey-30;
-				}		
-				a:hover {
-					color: $warm-grey-40;
-				}
-			}
-		}	
 	}
 }
 
@@ -48,61 +15,28 @@
 		.topbar {
 			border-top-color: $warm-grey-90;
 		}
-		
-    #nav-primary {
-     
-			ul {
-
-				li {
-					background-color: rgba($white, .5);
-					margin: 24px 8px 8px 8px;
-					padding: 8px;	
-					border-radius: 20%;
-			
-					a {
-						display: block;
-						width: 100%;
-						line-height: .8em;
-					}
-	
-	        a svg * {
-	          fill: $warm-grey-90;
-						opacity: .4;
-	        }
-
-	        a:hover svg * {
-	          fill: $turquoise;
-						opacity: 1.0;
-	        }
-  
-		      &.active a svg * {
-	          fill: $warm-grey-90;
-						opacity: 1.0;
-					}
-				}				
-      }
-		}
-	}	
+	}
 }
 
 // content
 #content {
+	margin-top: -10px;
 	background-color: $white;
+	color: $warm-grey-80;
 }
 
 // footer
-
 // mobile, tablet, and desktop
 @media only screen {
 
 	#footer {
 		background-color: $warm-grey-40;
-		
+
 		.flexcontainer
 		{
 			border-top-color: $warm-grey-40;
 		}
-		
+
 		h3, h4, p {
 			color: $white;
 		}
@@ -113,35 +47,55 @@
 			color: $warm-grey-10;
 		}
 	}
-
-
 }
 
 // cake-specific
 
-.col-2, .col-3, .col-4 {
-	float: left;
+.extra-padding {
+		padding-top: 60px;
+		padding-bottom: 60px;
 }
 
-.headline {
-	color: $white;
-	position: absolute;
-	bottom: 0;
-}
-
-.thumb {
-	padding: 4px;
-	border: 1px solid $warm-grey-90;
-}
-
-.sidestory {
-	background-color: $warm-grey-90;
-	color: $warm-grey-10;
-	padding: 20px 0 40px 0;
-	
-	.date {
-		color: $warm-grey-40;
+.grey {
+	background-color: $warm-grey-10;
+	span.tag {
+		background-color: $white;
+		color: $warm-grey-80;
 	}
 }
 
+span.tag {
+	padding: 10px 20px 10px 20px;
+	margin-right: 10px;
+	background-color: $warm-grey-30;
+	color: $white;
+	border-radius: 4px;
+}
 
+.meta {
+	h1, h4 {
+		color: $warm-grey-30;
+		margin: 0;
+	}
+}
+
+.related {
+	margin-top: 20px;
+	padding: 30px 0 20px 0;
+	border-top: 1px solid $warm-grey-30;
+	border-bottom: 1px solid $warm-grey-30;
+
+	h2 {
+		font-size: 24px;
+	}
+
+	p {
+		font-style: italic;
+	}
+
+}
+
+
+.back-link {
+	margin-top: 40px;
+}
