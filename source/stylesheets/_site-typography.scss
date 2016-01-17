@@ -21,6 +21,10 @@ h3, h4, .back-link a {
 	font-weight: 700;
 }
 
+p .tm {
+	font-weight: lighter;
+}
+
 ul, li {
 	list-style-type: none;
 }
@@ -47,7 +51,6 @@ h1, h2, h3, h4, h5, p {
 		line-height: 20px;
 	}
 }
-
 
 // for mobile
 @media only screen and (min-device-width: 320px) {
@@ -99,7 +102,7 @@ h1, h2, h3, h4, h5, p {
 		line-height: 20px;
 	}
 
-		p, li, ul, span {
+		p, li, ul, .class {
 			font-size: 14px;
 			line-height: 20px;
 		}
@@ -127,7 +130,7 @@ h1, h2, h3, h4, h5, p {
 		line-height: 20px;
 	}
 
-	p, li, ul, span {
+	p, li, ul, .tag {
 		font-size: 16px;
 		line-height: 24px;
 	}
